@@ -21,27 +21,36 @@ const bodyFont = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vanshsuthar.dev"),
+  metadataBase: new URL("https://udaypatel.dev"),
   title: {
-    default: "Vansh Suthar — MERN Stack Developer",
-    template: "%s — Vansh Suthar",
+    default: "Uday Patel — MERN Stack Developer",
+    template: "%s — Uday Patel",
   },
   description:
     "MERN Stack Developer building full-stack web applications with React, Node.js, and MongoDB. Currently interning at Concatstring Solutions.",
-  keywords: ["Vansh Suthar", "MERN Stack", "React Developer", "Full Stack", "Next.js", "JavaScript"],
-  authors: [{ name: "Vansh Suthar", url: "https://github.com/VanshSUTHAR" }],
+  keywords: [
+    "Uday Patel",
+    "MERN Stack",
+    "React Developer",
+    "Full Stack",
+    "Next.js",
+    "JavaScript",
+  ],
+  authors: [{ name: "Uday Patel", url: "https://github.com/udaypatel" }],
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://vanshsuthar.dev",
-    title: "Vansh Suthar — MERN Stack Developer",
-    description: "Building full-stack web applications with React, Node.js, and MongoDB.",
-    siteName: "Vansh Suthar Portfolio",
+    url: "https://udaypatel.dev",
+    title: "Uday Patel — MERN Stack Developer",
+    description:
+      "Building full-stack web applications with React, Node.js, and MongoDB.",
+    siteName: "Uday Patel Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vansh Suthar — MERN Stack Developer",
-    description: "Building full-stack web applications with React, Node.js, and MongoDB.",
+    title: "Uday Patel  — MERN Stack Developer",
+    description:
+      "Building full-stack web applications with React, Node.js, and MongoDB.",
   },
   robots: { index: true, follow: true },
 };
@@ -53,7 +62,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${displayFont.variable} ${bodyFont.variable} font-body`}>
+      <body
+        className={`${displayFont.variable} ${bodyFont.variable} font-body`}
+      >
         <ThemeProvider>
           <GrainOverlay />
           <Navbar />
