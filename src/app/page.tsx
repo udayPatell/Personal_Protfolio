@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FiArrowRight, FiGithub } from "react-icons/fi";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
+import Image from "next/image";
 
 const TECH = [
   "JavaScript",
@@ -135,13 +136,22 @@ export default function HomePage() {
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               className="relative z-20 p-3 bg-white/5 backdrop-blur-md border border-slate-200 dark:border-white/20 rounded-[3rem] shadow-2xl"
             >
-              <div className="overflow-hidden rounded-[2.5rem] relative bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center h-[550px] w-[380px]">
-                <span
-                  className="text-white font-bold"
-                  style={{ fontSize: "10rem", lineHeight: 1 }}
-                >
-                  UP
-                </span>
+              {/* <div className="overflow-hidden rounded-[2.5rem] relative bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center h-[550px] w-[380px]">
+                <Image
+                  src="/portfolio.jpeg"
+                  alt="Profile"
+                  width={1000}
+                  height={1000}
+                  className="rounded-[3.5rem] object-cover"
+                />
+              </div> */}
+              <div className="overflow-hidden rounded-[2.5rem] relative bg-gradient-to-br from-amber-400 to-amber-600 h-[550px] w-[380px]">
+                <Image
+                  src="/portfolio.jpeg"
+                  alt="Profile"
+                  fill
+                  className="object-cover rounded-[2.5rem]"
+                />
               </div>
 
               <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-[85%] px-6 py-5 rounded-2xl border border-white/80 bg-white/90 dark:bg-slate-900/90 backdrop-blur-2xl shadow-xl transition-all duration-500 group-hover:-translate-y-2">
